@@ -1,0 +1,10 @@
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/Release/netcoreapp2.0/OntologyXmlParser.deps.json
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/Release/netcoreapp2.0/OntologyXmlParser.runtimeconfig.json
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/Release/netcoreapp2.0/OntologyXmlParser.runtimeconfig.dev.json
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/Release/netcoreapp2.0/OntologyXmlParser.dll
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/Release/netcoreapp2.0/OntologyXmlParser.pdb
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/obj/Release/netcoreapp2.0/OntologyXmlParser.csproj.CoreCompileInputs.cache
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/obj/Release/netcoreapp2.0/OntologyXmlParser.AssemblyInfoInputs.cache
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/obj/Release/netcoreapp2.0/OntologyXmlParser.AssemblyInfo.cs
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/obj/Release/netcoreapp2.0/OntologyXmlParser.dll
+/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/obj/Release/netcoreapp2.0/OntologyXmlParser.pdb

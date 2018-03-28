@@ -1,0 +1,10 @@
+[Unit]
+Description=Ontology XML Parser
+After=network.target
+
+[Service]
+ExecStart=/mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/Release/netcoreapp2.0/ /mnt/c/Users/GRIS/Dropbox/ano3s1/Tese/GIT/ACACIA/OntologyXmlParser/bin/OntologyXmlParser.dll
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
