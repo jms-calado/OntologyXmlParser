@@ -25,7 +25,7 @@ namespace OntologyXmlParser
                     HttpResponseMessage postAffectResponse =  PostAffect(affect).Result;
                     if(!postAffectResponse.IsSuccessStatusCode)
                         Console.WriteLine("Failed to POST affect, with error: {0}", postAffectResponse.Content.ReadAsStringAsync().Result.ToString());
-                    Console.WriteLine("POSTed affect");
+                    else Console.WriteLine("POSTed affect");
                 }
                 if(behaviour != null)
                 {
@@ -33,7 +33,7 @@ namespace OntologyXmlParser
                     HttpResponseMessage postBehaviourResponse =  PostBehaviour(behaviour).Result;
                     if(!postBehaviourResponse.IsSuccessStatusCode)
                         Console.WriteLine("Failed to POST behaviour, with error: {0}", postBehaviourResponse.Content.ReadAsStringAsync().Result.ToString());
-                    Console.WriteLine("POSTed behaviour");
+                    else Console.WriteLine("POSTed behaviour");
                 }
                 if(emotion != null)
                 {
@@ -41,7 +41,7 @@ namespace OntologyXmlParser
                     HttpResponseMessage postEmotionResponse =  PostEmotion(emotion).Result;
                     if(!postEmotionResponse.IsSuccessStatusCode)
                         Console.WriteLine("Failed to POST emotion, with error: {0}", postEmotionResponse.Content.ReadAsStringAsync().Result.ToString());
-                    Console.WriteLine("POSTed emotion");
+                    else Console.WriteLine("POSTed emotion");
                 }
             }
         }

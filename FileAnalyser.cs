@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using System;
 using System.Globalization;
 using System.IO;
+using System.Threading.Tasks;
 using System.Xml;
 using static OntologyXmlParser.GlobalVars;
 
@@ -352,16 +353,26 @@ namespace OntologyXmlParser
                     }
                 }
                 while (!xmlfilereader.EOF);
+                xmlfilereader.Close();
                 #endregion xml2
 
-                Anger = Math.Round((Anger / Sample_count) / 100, 3);
+                /*Anger = Math.Round((Anger / Sample_count) / 100, 3);
                 Contempt = Math.Round((Contempt / Sample_count) / 100, 3);
                 Disgust = Math.Round((Disgust / Sample_count) / 100, 3);
                 Fear = Math.Round((Fear / Sample_count) / 100, 3);
                 Joy = Math.Round((Joy / Sample_count) / 100, 3);
                 Sadness = Math.Round((Sadness / Sample_count) / 100, 3);
                 Surprise = Math.Round((Surprise / Sample_count) / 100, 3);
-                Engagement = Math.Round((Engagement / Sample_count) / 100, 3);
+                Engagement = Math.Round((Engagement / Sample_count) / 100, 3);*/
+                
+                Anger = Math.Round((Anger / Sample_count) , 3);
+                Contempt = Math.Round((Contempt / Sample_count) , 3);
+                Disgust = Math.Round((Disgust / Sample_count) , 3);
+                Fear = Math.Round((Fear / Sample_count) , 3);
+                Joy = Math.Round((Joy / Sample_count) , 3);
+                Sadness = Math.Round((Sadness / Sample_count) , 3);
+                Surprise = Math.Round((Surprise / Sample_count) , 3);
+                Engagement = Math.Round((Engagement / Sample_count) , 3);
 
                 //Duration = Math.Round(Duration * 1000, 0);
                 Duration = Math.Round(Duration, 0);
@@ -438,6 +449,7 @@ namespace OntologyXmlParser
             Console.WriteLine("File {0} {1}", e.FullPath, wct.ToString());
             if (!IsFileLocked(new FileInfo(e.FullPath)))
             {
+                Task.Delay(5000).Wait();
                 string filename = Path.GetFileNameWithoutExtension(e.FullPath);
                 Analyser(e.FullPath, filename);
             }
